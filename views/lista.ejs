@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><title><%= titulo %>
+        </title><link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container"><h1>Gestión de Contactos</h1>
+            <p class="subtitle">Contactos guardados en <code>contactos.txt</code></p> 
+               <a href="/agregar" class="button add-button">➕ Agregar Nuevo Contacto</a>
+    
+    <% if (contactos.length > 0) { %>
+        <ul class="contact-list">
+            <% contactos.forEach(function(contacto) { %>
+                <li class="contact-item">
+                    <div class="contact-info">
+                        <strong><%= contacto.nombre %></strong>
+                        <p>📞: <%= contacto.telefono %></p>
+                        <p>📧: <%= contacto.email %></p>
+                        <span class="contact-id">ID: <%= contacto.id %></span>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="/editar/<%= contacto.id %>" class="button edit-button">✏️ Editar</a>
+                        <!-- Formulario para eliminar (se usa POST para la acción) -->
+                        <form action="/eliminar/<%= contacto.id %>" method="POST" onsubmit="return confirm('¿Está seguro de que desea eliminar este contacto?');">
+                            <button type="submit" class="button delete-button">🗑️ Eliminar</button>
+                        </form>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+            <% } else { %>
+                <p class="no-data">No hay contactos guardados. ¡Comienza a agregar!</p>
+            <% } %>
+        </div>
+    </body>
+</html>

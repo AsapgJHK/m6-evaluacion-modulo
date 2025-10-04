@@ -1,0 +1,191 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/asuka.png'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center center;
+    color: #f8f8f8; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(30, 30, 30, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h1, h2 {
+    color: #FF5733; 
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-group a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 10px;
+    background-color: #E74C3C; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button-group a:hover {
+    background-color: #C0392B; 
+}
+
+.contact-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    background-color: rgba(50, 50, 50, 0.8); 
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-info {
+    flex-grow: 1;
+}
+
+.contact-info strong {
+    color: #FF7043; 
+    font-size: 1.1em;
+}
+
+.contact-actions button,
+.contact-actions a {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+    font-size: 0.9em;
+}
+
+.contact-actions button:hover,
+.contact-actions a:hover {
+    background-color: #C0392B;
+}
+
+
+form {
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #FFC0CB;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+    border-color: #FF5733; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.5);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF5733; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #E74C3C; 
+}
+
+
+.message {
+    background-color: rgba(255, 87, 51, 0.9); 
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: rgba(231, 76, 60, 0.9); 
+}
+
+
+.error-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.error-page h1 {
+    font-size: 3em;
+    color: #E74C3C; 
+}
+
+.error-page p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.error-page a {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.error-page a:hover {
+    background-color: #C0392B;
+}
